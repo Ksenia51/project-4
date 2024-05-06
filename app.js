@@ -3,6 +3,7 @@ const fs = require("fs").promises;
 const path = require("path");
 const mainRouter = require("./routes/main");
 const gamesRouter = require("./routes/games");
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -14,5 +15,6 @@ app.listen(PORT, ()=>{
 
 app.use(express.static(path.join(__dirname, "public")), 
 mainRouter,
+bodyParser.json(),
 gamesRouter
 );
