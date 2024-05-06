@@ -1,9 +1,6 @@
+const { getAllGames, deleteGame, addGame } = require("../controllers/games");
+
 const gamesRouter = require("express").Router();
-
-const getAllGames = async (req, res) => {};
-const deleteGame = async (req, res) => {};
-const addGame = async (req, res) => {};
-
 
 
 gamesRouter.get("/games", getAllGames);

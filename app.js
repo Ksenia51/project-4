@@ -6,10 +6,10 @@ const gamesRouter = require("./routes/games");
 
 const app = express();
 
-const PORT = 3002;
+const PORT = 3000;
 
 app.listen(PORT, ()=>{
-    console.log(`Server has been started on http://locallhost:3002`);
+    console.log(`Server has been started on http://locallhost:3000`);
 });
 
 app.use(express.static(path.join(__dirname, "public")), 
